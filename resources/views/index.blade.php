@@ -62,14 +62,7 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <div class="search_icon">
-                            <ul>
-                                <li><a href=""><img src="{{ asset('assets/images/search-icon.png') }}"></a></li>
-                                <li><a href="{{ url('/admin/login') }}">LOGIN</a></li>
-                            </ul>
-                        </div>
-                    </form>
+                    
                 </div>
             </nav>
         </div>
