@@ -226,7 +226,7 @@ button {
     width: 100%;
     float: left;
     background-image: url(../images/banner-bg.png);
-    height: auto;
+    height: 700px;
     background-size: 100%;
 }
 .bg-light {
@@ -235,6 +235,7 @@ button {
 .logo {
     width: 25%;
     float: left;
+    font-size: bold;
 }
 .navbar-light .navbar-nav .nav-link {
     color: #111111;
@@ -246,31 +247,10 @@ button {
     color: #ffb607;
 }
 
-.mr-auto, .mx-auto {
+.ml-auto {
     margin: 0 auto;
 }
 
-.search_icon {
-    width: auto;
-    float: right;
-    text-align: right;
-}
-.search_icon ul{
-    margin: 0px;
-    padding: 0px;
-}
-.search_icon li {
-    float: left;
-    padding-left: 20px;
-    font-size: 18px;
-    color: #000;
-}
-.search_icon li a{
-    color: #000;
-}
-.search_icon li a:hover{
-    color: #ffb607;
-}
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 20px;
     padding-left: 20px;
@@ -321,7 +301,7 @@ button {
 .contact_bt {
     width: 100%;
     float: left;
-    margin-top: 360px;
+    margin-top: 100px;
 }
 .contact_bt a{
     width: 100%;
@@ -417,6 +397,9 @@ button {
     margin-left: 0px;
     margin-top: 10px;
 }
+.lorem_text {
+    margin-bottom: 10px; /* Sesuaikan dengan kebutuhan Anda */
+}
 
 .read_bt_main{
     width: 60%;
@@ -426,7 +409,7 @@ button {
 .read_bt {
     width: 100%;
     float: left;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .read_bt a{
     width: 100%;
@@ -483,8 +466,9 @@ button {
     color: #ffffff;
     background-color: #070201;
     text-align: center;
-    padding: 10px 0px;
+    padding: 20px 0px;
     border-radius: 5px;
+
     text-transform: uppercase;
 }
 .read_bt1 a:hover{
@@ -832,12 +816,18 @@ a:hover {
     width: 100%;
     float: left;
 }
-.contact_text{
+.contact_text.h1{
+    width: 100%;
+    float: left;
+    font-size: 36px;
+    color: #ffffff
+
+}
+.contact_text.h4{
     width: 100%;
     float: left;
     font-size: 36px;
     color: #ffffff;
-
 }
 .email-bt {
     color: #989696;
@@ -868,13 +858,14 @@ textarea#comment::placeholder {
 .send_bt {
     width: 100%;
     float: left;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 .send_bt a{
     width: 30%;
     float: left;
     font-size: 20px;
-    color: #989696;
+    color: #ffffff;
+    background-color: #070201;
     text-align: center;
     border: 2px solid #ffffff;
     padding: 10px 0px;
