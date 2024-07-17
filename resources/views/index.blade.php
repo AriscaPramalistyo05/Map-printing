@@ -121,7 +121,7 @@
                         kami.
                     </p>
 
-                    <div class="read_bt1"><a href="https://wa.me/6285555555555">Hubungi Kami</a>
+                    <div class="read_bt1"><a href="https://wa.me/6281390106201">Hubungi Kami</a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -518,11 +518,14 @@
                     <h1 class="contact_text">Hubungi Kami</h1>
                     <h5 class="contact_text">Kalian masih bingung? Ayo hubungi kami untuk konsultasi lebih lanjut!</h5>
                     <div class="mail_sectin">
-                        <input type="text" class="email-bt" placeholder="Nama" name="Name">
-                        <input type="text" class="email-bt" placeholder="Email" name="Name">
-                        <input type="text" class="email-bt" placeholder="Nomor Telepon" name="Name">
-                        <textarea class="massage-bt" placeholder="Pesan" rows="5" id="comment" name="Massage"></textarea>
-                        <div class="send_bt"><a href="#">Kirim</a></div>
+                        <form action="{{ route('store') }}" method="post">
+                            @csrf
+                            <input type="text" class="email-bt" placeholder="Nama" name="name" id="name" required>
+                            <input type="email" class="email-bt" placeholder="Email" name="email" id="email" required>
+                            <input type="tel" class="email-bt" placeholder="Nomor Telepon" name="phone" id="phone" required>
+                            <textarea class="massage-bt" placeholder="Pesan" rows="5" id="comment" name="message" id="message" required></textarea>
+                            <div class="send_bt"><a><button type="submit">Kirim</button></a></div> 
+                        </form>
                     </div>
                 </div>
 
