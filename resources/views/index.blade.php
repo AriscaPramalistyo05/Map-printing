@@ -32,14 +32,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen">
 </head>
-
 <body>
     <!-- header section start -->
     <div class="header_section">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="logo"><a href="index.html"><img src="{{ asset('assets/images/logo1.png') }}"></a></div>
-
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: #f8f9fa;">
+                <div class="logo">
+                    <a href="index.html"><img src="{{ asset('assets/images/logo1.png') }}"></a>
+                </div>
+            
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -62,6 +63,8 @@
                     </ul>
                 </div>
             </nav>
+            
+
         </div>
         <!-- banner section start -->
         <div id="beranda" class="banner_section layout_padding">
@@ -507,10 +510,7 @@
                 <div class="col-md-6">
                     <div class="map_main">
                         <div class="map-responsive">
-                            <iframe
-                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France"
-                                width="600" height="600" frameborder="0" style="border:0; width: 100%;"
-                                allowfullscreen=""></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.8099700284465!2d110.67227480000001!3d-6.670454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70e1b3e855911f%3A0x6ea9333cdf4acf77!2sGawe%20stempel%20%26%20Map%20Printing!5e0!3m2!1sid!2sid!4v1721288116746!5m2!1sid!2sid"  width="600" height="600" frameborder="0" style="border:0; width: 100%;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -524,9 +524,9 @@
                             <input type="email" class="email-bt" placeholder="Email" name="email" id="email" required>
                             <input type="tel" class="email-bt" placeholder="Nomor Telepon" name="phone" id="phone" required>
                             <textarea class="massage-bt" placeholder="Pesan" rows="5" id="comment" name="message" id="message" required></textarea>
-                            <div class="send_bt"><a><button type="submit">Kirim</button></a></div> 
+                            <div class="send_bt"><a href="https://wa.me/6281390106201">Kirim</a></div> 
                         </form>
-                    </div>
+                    </div> 
                 </div>
 
             </div>
@@ -604,6 +604,7 @@
         <script src="{{ asset('assets/js/owl.carousel.js') }}"></script>
         <script src="{{ asset('assets/https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js') }}">
         </script>
+        
 </body>
 
 </html>

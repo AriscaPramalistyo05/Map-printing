@@ -225,8 +225,8 @@ button {
 .header_section{
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
-    height: 700px;
+    background-image: url(../images/bg.png);
+    height: 600px;
     background-size: 100%;
 }
 .bg-light {
@@ -278,31 +278,36 @@ button {
     float: left;
     text-align: center;
 }
-.furniture_text{
+.furniture_text {
     width: 100%;
     float: left;
-    font-size: 100px;
+    font-size: 70px;
+    font-weight: bold;
     color: #090808;
-    text-align: center;
+    text-align: left;  /* Change from center to left */
     text-transform: uppercase;
 }
+
 .there_text {
     width: 50%;
-    margin: 0 auto;
+    margin: 0;  /* Remove auto to prevent centering */
     font-size: 16px;
     color: #090808;
-    text-align: center;
+    text-align: left;
 }
-.contact_bt_main{
+
+.contact_bt_main {
     width: 17%;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0;  /* Remove auto to prevent centering */
+    text-align: left;
 }
+
 .contact_bt {
     width: 100%;
     float: left;
-    margin-top: 100px;
+    margin-top:100px;
 }
+
 .contact_bt a{
     width: 100%;
     float: left;
@@ -992,7 +997,18 @@ textarea#comment::placeholder {
 .copyright_text a:hover{
     color: #fdbe28;
 }
-
+.navbar {
+    transition: background-color 0.3s;
+}
+.navbar.transparent {
+    background-color: rgba(255, 255, 255, 0);
+}
+.navbar.scrolled {
+    background-color: rgba(128, 128, 128, 1); /* Abu-abu */
+}
+.custom-navbar {
+    background-color: #f8f9fa; /* Warna abu-abu */
+}
 
 
 
